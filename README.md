@@ -1,8 +1,6 @@
 DMA-Controlled PWM for WS2812B LEDs with TIM1
 This project demonstrates how to generate PWM signals for controlling WS2812B LEDs using the STM32's TIM1 timer and DMA (Direct Memory Access). The code initializes and configures the TIM1 peripheral to drive the LEDs and uses DMA to efficiently transfer RGB data to the timer's output compare register. The system allows for precise control of the LEDs using DMA without occupying the main CPU for data transfer.
 
-Demonstration Video Link:
-
 Features
 DMA-Controlled PWM Signals: Uses DMA to transfer RGB data to the TIM1 peripheral, allowing efficient and precise control of the WS2812B LEDs.
 Interrupt-Driven System: Configures and handles DMA transfer completion through interrupts, ensuring non-blocking operation.
@@ -57,3 +55,5 @@ The project has been developed using the C programming language and was compiled
 Please note that only the core project files (ws2812b.c, ws2812b.h, timer.c, timer.h and main.c) have been provided. You will need to implement other necessary configurations, such as IO initialization and RCC enabling, according to your own compiler and library setup. Ensure that the hardware-specific settings are adjusted for your environment.
 
 The project also includes the design of the electronic circuit schematic, outlining the components and their connections. However, it does not include a PCB (Printed Circuit Board) design.
+
+Demonstration Video Link: https://youtube.com/shorts/67BUkzvugyc?feature=share
